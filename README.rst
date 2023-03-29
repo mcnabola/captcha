@@ -54,6 +54,17 @@ Audio and Image CAPTCHAs are in separated modules:
 This is the APIs for your daily works. We do have built-in voice data and font
 data. But it is suggested that you use your own voice and font data.
 
+For quick prototyping you may not want to import font data, below are some 
+examples of how to create objects that can be used with the example above.
+
+.. code:: python
+   # different ways of creating the ImageCaptcha object
+
+   image = ImageCaptcha(fonts=['/path/A.ttf', '/path/B.ttf'])
+   image = ImageCaptcha(width = 300, height = 100) 
+   image = ImageCaptcha() 
+
+
 Voices
 ------
 
